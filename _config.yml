@@ -1,1 +1,34 @@
 theme: jekyll-theme-architect
+
+title: # 
+email: thdehdgns@gmail.com
+description: I am uploading what I have studied!
+baseurl: "" # 기본 url
+url: "Donghoon759.github.io
+timezone: Asia/Seoul # timezone 설정
+
+repository: Donghoon759/Donghoon759.github.io # username.github.io repository를 적어주면 된다.
+
+permalink: /:year/:month/:day/:title/ # url을 어떻게 구성할 건지 묻는 것
+
+excerpt_separator: <!--more--> # post에서 추출할 때 무엇을 기준으로 추출할 것인지 주로 미리보기에 사용된다.
+
+markdown: kramdown # markdown 설정인데 아래 kramdown 까지 그대로 사용하면 된다
+
+kramdown:
+  input: GFM
+  highlighter: rouge
+
+gems:
+  - jekyll-paginate # 페이지 네이션 설정
+
+paginate: 5 # 몇 개의 포스트를 1개 페이지에 표시할 것인지
+paginate_path: '/page/:num/' # 페이지네이션 경로
+
+exclude: [README.md, LICENSE.md, Gemfile, Gemfile.lock] # Jekyll이 무시할 목록
+
+keep_files: [assets, files] # 유지할 파일들
+
+author: username # author
+asset_url: /assets # assets의 경로
+image: '' # 블로그 기본 이미지
